@@ -16,7 +16,7 @@ public class MarkdownParseTest { //class for test method
         Path filePath = Path.of("test-file.md");
         String content = Files.readString(filePath);
         expected.add("https://something.com");
-        expected.add("some-page.html");
+        expected.add("some-thing.html");
         ArrayList<String> output = new ArrayList<String>();
         output = MarkdownParse.getLinks(content);
         assertEquals(expected.toArray(), output.toArray());
