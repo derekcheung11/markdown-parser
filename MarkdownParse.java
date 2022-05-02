@@ -33,7 +33,11 @@ public class MarkdownParse {
                 break;
             }
             toReturn.add(markdown.substring(openParen + 1, closeParen));
-
+            
+            System.out.println(openBracket);
+            System.out.println(closeBracket);
+            System.out.println(openParen);
+            System.out.println(closeParen);
         }
 
         return toReturn;
