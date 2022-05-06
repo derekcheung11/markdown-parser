@@ -39,5 +39,5 @@ jobs:
       # Runs makefile
       - name: runs makefile
         run: |
-          makefile
+          make build
           
